@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2024-09-30">
+<meta name="dcterms.date" content="2024-10-02">
 
 <title>Class 5 Assignment: The Raster Model</title>
 <style>
@@ -86,7 +86,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">September 30, 2024</p>
+      <p class="date">October 2, 2024</p>
     </div>
   </div>
   
@@ -360,7 +360,7 @@ Note
 </figure>
 </div>
 <ul>
-<li>As the new raster <code>land</code> is produced, go to symbology and set the <em>Render Type</em> to <code>Paletted/Unique values</code>; any color combination is fine:</li>
+<li>As the new raster <code>land</code> is produced, go to symbology and set the <em>Render Type</em> to <code>Paletted/Unique values</code>; any color combination is fine as long as they are contrasting in hue and/or saturation to see the difference between to the coverage types:</li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -369,12 +369,30 @@ Note
 </figure>
 </div>
 <ul>
-<li>Next, install the plugin named <em>RasterAttributeTable</em>. Once installed you will have access to a <em>New Attribute Table</em>. At this juncture, just preview the table for the <code>land</code> raster:</li>
+<li>Once complete, and additional attribute table can be created for the layer if desired. This step should be done for this assignment so that you have experience with this functionality; however, its an optional capacity, not an requirement of conditional rasters.</li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="c5_assignment_fall_24_NINT5380_files/img/15.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption"><em>RasterAttributeTable Plugin</em></figcaption><p></p>
+<p><img src="c5_assignment_fall_24_NINT5380_files/img/att.table1.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption"><em>New Attribute Table (Create Raster Attribute Table) is now available for raster layers via right-click at layer</em></figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="c5_assignment_fall_24_NINT5380_files/img/att.table2.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption"><em>Chose to create the <code>VAT.DBF file</code> option, give it a name, and save it in the directory that holds the raster layer</em></figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="c5_assignment_fall_24_NINT5380_files/img/17.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption"><em>Raster Attribute Table Results</em></figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="c5_assignment_fall_24_NINT5380_files/img/18.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption"><em>Raster Output results for the first conditions land vs water</em></figcaption><p></p>
 </figure>
 </div>
 <div class="callout-note callout callout-style-default callout-captioned">
@@ -387,26 +405,8 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>In order for <em>RasterAttributeTable</em> Plugin to create a new attribute table for the raster, the raster must first be classified in symbology. Once compete, it will automatically produce the attribute table for the raster.</p>
+<p>In previous versions of QGIS, the <em>RasterAttributeTable</em> plugin was used to create a new attribute table for a raster file. However, the latest version <strong>QGIS 3.34 Prizren</strong> attribute table capacity has been built into the release as default. Do note however, the raster must first be classified in symbology using <em>Render Type</em> set to <code>Paletted/Unique values</code> . Once compete, it will allow for the creation of the attribute table for the raster.</p>
 </div>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="c5_assignment_fall_24_NINT5380_files/img/16.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption"><em>RasterAttributeTable Plugin - New Attribute Table is now available for raster layers</em></figcaption><p></p>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="c5_assignment_fall_24_NINT5380_files/img/17.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption"><em>RasterAttributeTable Plugin - New Attribute Table is now available for raster layers</em></figcaption><p></p>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="c5_assignment_fall_24_NINT5380_files/img/18.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption"><em>RasterAttributeTable Plugin - New Attribute Table is now available for raster layers</em></figcaption><p></p>
-</figure>
 </div>
 <ul>
 <li>Next, move to the best-case scenario (BCS). This is flooding that would occur at the threshold of <code>≤ 0.28</code> meters. Save the output as <code>flood_BCS</code>:</li>
@@ -490,6 +490,7 @@ Note
 <li>Worst Case scenario</li>
 <li>Best Case scenario</li>
 </ul></li>
+<li><p>Proceed to creating a Raster Attribute Table for this layer as was done for the first conditional raster for land vs.&nbsp;water, Step 4 above.</p></li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -509,17 +510,16 @@ Note
 <li><p><strong>Question 1</strong>: <em>How much of Manhattan will be inundated by rising sea levels by 2100?</em></p></li>
 <li><p><strong>Question 2</strong>: <em>How much of Manhattan is at risk of a 10 m (30-foot) storm surge?</em></p></li>
 <li><p>To do answer these questions, you will need an areal calculation for the total land area and land areas for each scenario.</p></li>
-<li><p>To start, open the attribute table for <code>dem_final</code>. Note the <code>Value</code>, <code>Count</code> and <code>Class</code> columns; the other columns are not relevant. At this juncture, the table cannot be further edited within the <em>RasterAttributeTable</em> plugin.</p></li>
+<li><p>To start, open the attribute table for <code>dem_final</code>. Note columns that are available. However, we do not have access to the areal qualities of each class via this attribute table output - a limitation of the default attribute table tool in the latest version of QGIS. There is a tool entitled <strong>Raster layer unique values report</strong> that will report areal qualities and counts of pixels per discrete class. This is another good option for summarization. However, for this assignment, we will determine the areal extent of each class through a process known as <em>polygonization</em> in the following workflow.</p></li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="c5_assignment_fall_24_NINT5380_files/img/27.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption"><em>Note <code>Value</code>, <code>Count</code> and <code>Class</code> attributes</em></figcaption><p></p>
+<p></p><figcaption class="figure-caption"><em>Note the attributes of the <code>dem_final</code> attribute table</em></figcaption><p></p>
 </figure>
 </div>
 <ul>
-<li><p>Ideally, we would be able to export this attribute table to a <code>.dbf</code> that we could then further edit with the <em>Field Calculator</em>; however this is not available via the <em>RasterAttributeTable</em> plugin. One workaround is to transform the raster to a polygon feature and develop the attribute table there.</p></li>
-<li><p>To start, initiate a <em>Polygonize</em> transformation, i.e.&nbsp;transform the pixels in the raster into polygon features. Proceed to <em>Processing Toolbox &gt; raster pixels to polygons</em>:</p></li>
+<li>To start, initiate a <em>Polygonize</em> transformation, i.e.&nbsp;transform the pixels in the raster into polygon features. Proceed to <em>Processing Toolbox &gt; raster pixels to polygons</em>:</li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -557,17 +557,17 @@ Note
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="c5_assignment_fall_24_NINT5380_files/img/dissolve.2.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption"><em>Choose Dissove field(s) as <code>VALUE</code> </em></figcaption><p></p>
+<p></p><figcaption class="figure-caption"><em>Choose Dissove field(s) as <code>VALUE</code> and runs as a temporary layer</em></figcaption><p></p>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="c5_assignment_fall_24_NINT5380_files/img/32.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption"><em>Dissolve Tool Zone Result</em></figcaption><p></p>
+<p></p><figcaption class="figure-caption"><em>Dissolve Tool Zone Result as temporary layer</em></figcaption><p></p>
 </figure>
 </div>
 <ul>
-<li>Next, open <code>Dissolved</code> layer’s attribute table and utilize the <em>Field Calculator</em> to create a new column <code>Class</code> as a <code>Text (string)</code> with a <code>field length</code> of <code>30</code>. Set the field content as <code>'test'</code>:</li>
+<li>Next, open <code>Dissolved</code> layer’s attribute table and utilize the <em>Field Calculator</em> to create a new column <code>Class</code> as a <code>Text (string)</code> with a <code>field length</code> of <code>30</code>. Set the field content as a holder value of <code>'test'</code>:</li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -639,7 +639,7 @@ Warning
 </div>
 </div>
 <ul>
-<li>Next, create a new column in <code>Dissolved</code> layer named <code>SQ Meter</code>; <code>Decimal number (real)</code>; setting the Expression to <code>$area</code> under the Geometry Expression:</li>
+<li>Next, create a new column in <code>Dissolved</code> layer named <code>SQ Meter</code>; <code>Decimal number (real)</code> as the number type; setting the Expression to <code>$area</code> under the Geometry expression tab:</li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
