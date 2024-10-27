@@ -49,14 +49,17 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#preamble" id="toc-preamble" class="nav-link active" data-scroll-target="#preamble">Preamble</a></li>
+  <li><a href="#class-9-recorded-lecture" id="toc-class-9-recorded-lecture" class="nav-link" data-scroll-target="#class-9-recorded-lecture">Class 9 Recorded Lecture:</a></li>
   <li><a href="#class-9-readings" id="toc-class-9-readings" class="nav-link" data-scroll-target="#class-9-readings">Class 9 Readings:</a></li>
   <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data:</a></li>
   <li><a href="#assignment-step-1" id="toc-assignment-step-1" class="nav-link" data-scroll-target="#assignment-step-1">Assignment Step 1</a></li>
   <li><a href="#assignment-step-2---data-preprocessing-for-the-vector-features" id="toc-assignment-step-2---data-preprocessing-for-the-vector-features" class="nav-link" data-scroll-target="#assignment-step-2---data-preprocessing-for-the-vector-features">Assignment Step 2 - Data preprocessing for the vector features</a></li>
   <li><a href="#assignment-step-3---overlay-geoprocessing" id="toc-assignment-step-3---overlay-geoprocessing" class="nav-link" data-scroll-target="#assignment-step-3---overlay-geoprocessing">Assignment Step 3 - Overlay Geoprocessing</a></li>
   <li><a href="#assignment-step-4---table-development" id="toc-assignment-step-4---table-development" class="nav-link" data-scroll-target="#assignment-step-4---table-development">Assignment Step 4 - Table Development</a></li>
+  <li><a href="#video-guide-i-step-i---ix" id="toc-video-guide-i-step-i---ix" class="nav-link" data-scroll-target="#video-guide-i-step-i---ix">Video Guide I | Step I - IX:</a></li>
   <li><a href="#assignment-step-5---normalization-by-geography-attribute" id="toc-assignment-step-5---normalization-by-geography-attribute" class="nav-link" data-scroll-target="#assignment-step-5---normalization-by-geography-attribute">Assignment Step 5 - Normalization by Geography Attribute</a></li>
   <li><a href="#assignment-step-6---rank-assignments" id="toc-assignment-step-6---rank-assignments" class="nav-link" data-scroll-target="#assignment-step-6---rank-assignments">Assignment Step 6 - Rank Assignments</a></li>
+  <li><a href="#video-guide-ii-step-ix---xii" id="toc-video-guide-ii-step-ix---xii" class="nav-link" data-scroll-target="#video-guide-ii-step-ix---xii">Video Guide II | Step IX - XII:</a></li>
   <li><a href="#assignment-step-7---thematic-design" id="toc-assignment-step-7---thematic-design" class="nav-link" data-scroll-target="#assignment-step-7---thematic-design">Assignment Step 7 - Thematic Design</a></li>
   <li><a href="#map-layout-deliverable" id="toc-map-layout-deliverable" class="nav-link" data-scroll-target="#map-layout-deliverable">Map layout &amp; Deliverable:</a></li>
   <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources:</a></li>
@@ -113,6 +116,28 @@ ul.task-list li input[type="checkbox"] {
 <li>Thematic map design for Mapping Vulnerability</li>
 </ul>
 </section>
+<section id="class-9-recorded-lecture" class="level2">
+<h2 class="anchored" data-anchor-id="class-9-recorded-lecture">Class 9 Recorded Lecture:</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://vimeo.com/1023617580"><img src="c9_assignment_fall_24_NINT5380_files/img/C9_lecture.png" class="img-fluid figure-img"></a></p>
+<p></p><figcaption class="figure-caption"><em>Class 9 Recorded Lecture - Mapping Vulnerability + Spatial Statistics</em></figcaption><p></p>
+</figure>
+</div>
+<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Before proceeding with assignment steps below, review the posted lecture slides + lecture recording for an overview of this week’s concepts and themes.</p>
+</div>
+</div>
+</section>
 <section id="class-9-readings" class="level2">
 <h2 class="anchored" data-anchor-id="class-9-readings">Class 9 Readings:</h2>
 <p>This week’s readings are <em>NOT</em> from the course textbook, and there will be no quiz for this week’s content. For context readings, refer to the <strong>Further References</strong> section at the bottom of the assignment.</p>
@@ -130,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="http://www.spc.noaa.gov/gis/svrgis/">Tornado RISK</a></li>
 <li><a href="http://www.spc.noaa.gov/wcm/data/SPC_severe_database_description.pdf">Metadata</a></li>
 </ul>
-<p><a href="https://www.dropbox.com/s/fouypadlm9ih29x/c9_assignment_data.zip?dl=1">Location of Class 9 Assignment Direct Data Download</a></p>
+<p><a href="https://www.dropbox.com/scl/fi/n5amjsiir4ioltwlo7si8/c9_assignment_data.zip?rlkey=zo9fafrk9s7ltfnadr2pr8ima&amp;st=zfpjjj8m&amp;dl=1">Location of Class 9 Assignment Direct Data Download</a></p>
 <div class="callout-note callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -317,7 +342,7 @@ Note
 <p>The <em>Group Stats</em> tool exports <code>.csv</code> with a semicolon separator.</p>
 </div>
 </div>
-<p>Load <code>fips_join.csv</code> into the assignment project via <em>Delimited Text</em> within the <em>Data Source Manager</em>, and check the <em>Semicolon</em> separator checkbox within the <em>Custom delimiter</em> option. Note also that this table does not contain any geometry attributes so the *Geometry Definitions will be set accordingly.</p>
+<p>Load <code>fips_join.csv</code> into the assignment project via <em>Delimited Text</em> within the <em>Data Source Manager</em>, and check the <em>Semicolon</em> separator checkbox within the <em>Custom delimiter</em> option. Note also that this table does not contain any geometry attributes so the <em>Geometry Definitions</em> will be set accordingly.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="c9_assignment_fall_24_NINT5380_files/img/txt.png" class="img-fluid figure-img"></p>
@@ -337,10 +362,32 @@ Note
 <p></p><figcaption class="figure-caption">Table Join</figcaption><p></p>
 </figure>
 </div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The resulting join will feature <code>209</code> records that do not join; these are the counties that did not have at least <code>1</code> tornado segment.</p>
+</div>
+</div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="c9_assignment_fall_24_NINT5380_files/img/join.2.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption"><em>Note the feature count for FIPS records that could not be joined</em></figcaption><p></p>
+<p><img src="c9_assignment_fall_24_NINT5380_files/img/selection.none.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption"><em>Null results selected - counties with no tornadoes</em></figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="video-guide-i-step-i---ix" class="level2">
+<h2 class="anchored" data-anchor-id="video-guide-i-step-i---ix">Video Guide I | Step I - IX:</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://vimeo.com/1023620559"><img src="c9_assignment_fall_24_NINT5380_files/img/C9_Part-I.png" class="img-fluid figure-img"></a></p>
+<p></p><figcaption class="figure-caption"><em>Steps 1 - 4</em></figcaption><p></p>
 </figure>
 </div>
 <div class="callout-note callout callout-style-default callout-captioned">
@@ -353,14 +400,8 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>The resulting join will feature <code>215</code> records that do not join; these are the counties that did not have at least <code>1</code> tornado segment.</p>
+<p>Video Guide I above covers all steps just prior of the full table join. Utilize Video Guide II for coverage of the table join process in Assignment Step #4 above.</p>
 </div>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="c9_assignment_fall_24_NINT5380_files/img/selection.none.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption"><em>Null results selected - counties with no tornadoes</em></figcaption><p></p>
-</figure>
 </div>
 </section>
 <section id="assignment-step-5---normalization-by-geography-attribute" class="level2">
@@ -450,7 +491,7 @@ HE = &gt;=11.22
 <p>Utilize fields <code>count_100</code> and <code>MobileHome</code> for <strong>Incidence</strong> and <strong>Exposure</strong>, respectively.</p>
 <p>To Start, make each selection condition #1 through #4 within <code>count_100</code> and <code>MobileHome</code>. Create a new column <code>risk_rank</code>, type whole number and make assignment 1, 2 , 3 and 4 in this new column based on each selection, respectively.</p>
 <blockquote class="blockquote">
-<p>Populate with value -999 to start. Any records with -999 resulting are simply the NULL values - counties that have no tornadoes. Those can either be symbolized in the final map as ‘low’ or as ‘No Incidence Records’:</p>
+<p>Populate with value -999 to start. Any records after assignments #1 through #4 with -999 resulting are simply the NULL values - counties that have no tornadoes. Those can either be symbolized in the final map as ‘No Incidence Records’:</p>
 </blockquote>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -463,7 +504,7 @@ HE = &gt;=11.22
 <ul>
 <li><p>Condition #1 -</p>
 <ul>
-<li>Select by Expression: <code>""MobileHome" &lt;11.22 and  "count_100" &lt;3.22</code></li>
+<li>Select by Expression: <code>"MobileHome" &lt;11.22 and  "count_100" &lt;3.22</code></li>
 <li>Field Calculator within <code>risk.rank</code> = 1</li>
 </ul></li>
 </ul>
@@ -473,12 +514,11 @@ HE = &gt;=11.22
 <p></p><figcaption class="figure-caption"><em>Condition 1</em></figcaption><p></p>
 </figure>
 </div>
-<p>Condition <code>1</code> should result in <code>629</code> records assigned this #1 Low Incidence, Low Exposure rank.</p>
 <ul>
 <li><p>Condition #2 -</p>
 <ul>
 <li>Select by Expression: <code>"MobileHome" &gt;=11.22 and  "count_100" &lt;3.22</code></li>
-<li>Field Calculator within <code>risk.rank</code>:</li>
+<li>Field Calculator within <code>risk.rank</code> = 2</li>
 </ul></li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
@@ -487,12 +527,11 @@ HE = &gt;=11.22
 <p></p><figcaption class="figure-caption"><em>Condition 2</em></figcaption><p></p>
 </figure>
 </div>
-<p>Condition <code>2</code> should result in <code>889</code> records assigned this #2 Low Incidence, High Exposure rank.</p>
 <ul>
 <li><p>Condition #3 -</p>
 <ul>
 <li>Select by Expression: <code>"MobileHome" &lt;11.22 and  "count_100" &gt;=3.22</code></li>
-<li>Field Calculator within <code>risk.rank</code>:</li>
+<li>Field Calculator within <code>risk.rank</code> = 3</li>
 </ul></li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
@@ -501,12 +540,11 @@ HE = &gt;=11.22
 <p></p><figcaption class="figure-caption"><em>Condition 3</em></figcaption><p></p>
 </figure>
 </div>
-<p>Condition <code>3</code> should result in <code>849</code> records assigned this #3 High Incidence, Low Exposure rank.</p>
 <ul>
 <li><p>Condition #4 -</p>
 <ul>
 <li>Select by Expression: <code>"MobileHome" &gt;=11.22 and  "count_100" &gt;=3.22</code></li>
-<li>Field Calculator within <code>risk.rank</code>:</li>
+<li>Field Calculator within <code>risk.rank</code> = 4</li>
 </ul></li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
@@ -515,7 +553,15 @@ HE = &gt;=11.22
 <p></p><figcaption class="figure-caption"><em>Condition 4</em></figcaption><p></p>
 </figure>
 </div>
-<p>Condition <code>4</code> should result in <code>656</code> records assigned this #4 High Incidence, High Exposure rank.</p>
+</section>
+<section id="video-guide-ii-step-ix---xii" class="level2">
+<h2 class="anchored" data-anchor-id="video-guide-ii-step-ix---xii">Video Guide II | Step IX - XII:</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://vimeo.com/1023624380"><img src="c9_assignment_fall_24_NINT5380_files/img/C9_Part-II.png" class="img-fluid figure-img"></a></p>
+<p></p><figcaption class="figure-caption"><em>Steps 1 - 8</em></figcaption><p></p>
+</figure>
+</div>
 </section>
 <section id="assignment-step-7---thematic-design" class="level2">
 <h2 class="anchored" data-anchor-id="assignment-step-7---thematic-design">Assignment Step 7 - Thematic Design</h2>
